@@ -29,10 +29,8 @@ jobs:
         with:
           script_name: app.py
           onefile: true
-          # [선택] 터미널 창을 숨겨야 하는 GUI 프로그램(PyQt, Tkinter 등)인 경우 주석 해제하세요.
-          # disable_console: true 
-          # [선택] 실행 파일(.exe)에 아이콘을 넣고 싶다면 프로젝트 폴더에 icon.ico를 두고 주석을 해제하세요.
-          # windows_icon_path: icon.ico
+          disable_console: true 
+
 
       - name: Upload Windows Artifact
         uses: actions/upload-artifact@v4
